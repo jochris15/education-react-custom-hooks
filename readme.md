@@ -1,7 +1,5 @@
 # React Custom Hooks
 
-## Rules of hooks
-[Dokumentasi Rules of hooks](https://legacy.reactjs.org/docs/hooks-rules.html)
 ### Background story
 Hooks itu baru ada di react 16.8(2018an), sebelum itu sebenernya pas kita bikin komponen menggunakan react itu lebih susah, karena belom ada hooks. Hooks itu mempermudah pembuatan komponen
 <br>
@@ -11,9 +9,14 @@ Sebelum 16.8 , react komponen cara bikinnya ada 2 cara yaitu
 - Function component = disebut dumb component , nah setelah 16.8 ,gara-gara ada hooks function component bisa ada state & lifecylenya
 
 ### What is hooks?
+[Dokumentasi Rules of hooks](https://react.dev/warnings/invalid-hook-call-warning)
+
 Sebuah function yang membuat functional component react punya fitur2 seperti layaknya class component
 cara penggunaan hooks itu ada 2
 - Only call hooks at the top level
+- Only call hooks from react function / custom hooks
+
+Example : 
 ```
 import { useEffect, useState } from "react";
 
@@ -33,9 +36,10 @@ export default function Home(){
     } // DON'T DO THIS!!!!!!!
 }
 ```
-- Only call hooks from react function / custom hooks
 
 ## Custom hooks
+[Dokumentasi Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks)
+
 Hooks buatan kita sendiri, kapan butuh kita buat hooks sendiri? ketika code kita redundant.
 <br>
 <br>
